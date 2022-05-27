@@ -42,6 +42,7 @@ export default {
             }).catch((error)=> {
                 console.error(error);
             })
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     },
     created(){

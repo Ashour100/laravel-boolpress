@@ -84,7 +84,7 @@
                     Welcome
                 </div>
                 <div class="links">
-                    <a href="{{route('posts')}}">See all posts</a>
+                    <a href="/posts">See all posts</a>
                 </div>
             </div>
 
