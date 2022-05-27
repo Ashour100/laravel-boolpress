@@ -28,8 +28,8 @@ Route::middleware('auth')
     Route::resource('posts','PostsController');
 
 });
-Route::get('/posts', function () {
-    return view('guest.posts');
-})->name('posts');
+Route::get('/homepage', function () {
+    return view('guest.home');
+})->name('homepage');
 
 

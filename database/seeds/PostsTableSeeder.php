@@ -16,7 +16,7 @@ class PostsTableSeeder extends Seeder
     {
         // $user_ids = User::pluck('id')->toArray();
 
-        for ($i=0; $i < 200; $i++) {
+        for ($i=10; $i < 210; $i++) {
             $newPost = new Post();
             $newPost->title = ucfirst($faker->realTextBetween(6, 16));
             // $newPost->user_id = $faker->randomElement($user_ids);

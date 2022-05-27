@@ -1,16 +1,19 @@
 <template>
 <div class="wrapper">
-    <h1 class="mt-3 ml-3">Latest Posts</h1>
-    <PostList/>
+    <Header/>
+    <Main/>
 </div>
 </template>
 
 <script>
-import PostList from '../components/PostList';
+import Header from '../components/Header';
+import Main from '../components/Main';
+
 export default {
     name:"root",
     components:{
-        PostList
+        Header,
+        Main
     },
 }
 </script>
