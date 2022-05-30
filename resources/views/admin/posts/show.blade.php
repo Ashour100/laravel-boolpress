@@ -8,5 +8,12 @@
 </head>
 <body>
     <h1>The Post Show</h1>
+    @if(session('message'))
+                <div class="col-12">
+                    <div class="alert alert-success">
+                        {{session('message')}}
+                    </div>
+                </div>
+            @endif
 </body>
 </html>
