@@ -3307,7 +3307,7 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "nav",
-    { staticClass: "navbar navbar-expand-lg navbar-light bg-light" },
+    { staticClass: "navbar navbar-expand-lg navbar-dark bg-dark" },
     [
       _c("div", { staticClass: "container-fluid" }, [
         _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [

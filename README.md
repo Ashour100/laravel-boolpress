@@ -1,4 +1,4 @@
-## Implementing api w laravel
+## Implementing vue w laravel
 
 
 Go to welcome page
