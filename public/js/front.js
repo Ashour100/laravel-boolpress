@@ -1978,7 +1978,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Post",
-  props: ['post']
+  props: ['post'],
+  methods: {
+    redirect: function redirect() {
+      window.location.href = 'http://127.0.0.1:8000/admin/posts/' + this.post.id;
+    }
+  }
 });
 
 /***/ }),
@@ -3432,7 +3437,11 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "card mb-2", staticStyle: { width: "18rem" } },
+    {
+      staticClass: "card mb-2",
+      staticStyle: { width: "18rem" },
+      on: { click: _vm.redirect },
+    },
     [
       _c("img", {
         staticClass: "card-img-top",

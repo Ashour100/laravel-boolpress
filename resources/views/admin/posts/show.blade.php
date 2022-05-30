@@ -17,6 +17,11 @@
                 <h4 class="card-subtitle fs-6">
                     {{ $post->created_at }}
                 </h4>
+                @foreach ($post->categories as $category)
+                        <span class="badge rounded-pill text-white" style="background-color: {{$category->color}}" >
+                            {{$category->name}}
+                        </span>
+                @endforeach
             </div>
             <div class="col-6 p-2 mb-2">
                 @if(str_starts_with($post->image_url, 'http'))
