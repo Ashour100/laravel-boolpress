@@ -14,7 +14,7 @@ export default {
     props:['post'],
     methods:{
         redirect(){
-            window.location.href = 'http://127.0.0.1:8000/admin/posts/'+this.post.id;
+            window.location.href = '/admin/posts/'+this.post.id;
         },
     }
 }

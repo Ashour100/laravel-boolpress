@@ -35,7 +35,7 @@ export default {
     },
     methods:{
         getPosts(page){
-            Axios.get(`http://127.0.0.1:8000/api/posts?page=${page}`)
+            Axios.get(`/api/posts?page=${page}`)
             .then((result)=>{
                 this.posts=result.data.data;
                 this.pagination= result.data;
